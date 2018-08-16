@@ -1,0 +1,21 @@
+{
+  "name": "expediainvoice",
+  "version": "1.0.0",
+  "description": "Invoice calculation",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "client": "npm run start --prefix client",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pranay Ankit Tiru",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^3.6.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.7",
+    "nodemon": "^1.18.3"
+  }
+}
